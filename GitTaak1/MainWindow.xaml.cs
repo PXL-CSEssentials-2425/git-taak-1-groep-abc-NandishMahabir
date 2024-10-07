@@ -50,5 +50,29 @@ namespace GitTaak1
         {
             gridKleuren.Background = color;
         }
+
+        private void red_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ChangeColorText("#FF0000");
+        }
+
+        private void yellow_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ChangeColorText("#FFFF00");
+        }
+
+        private void green_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ChangeColorText("#008000");
+        }
+
+        private void blue_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ChangeColorText("#0000FF");
+        }
+        private void ChangeColorText(string text)
+        {
+            colorText.Text = text;
+        }
     }
 }
