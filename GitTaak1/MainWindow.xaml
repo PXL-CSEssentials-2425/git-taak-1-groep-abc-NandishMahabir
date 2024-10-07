@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GitTaak1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="LightGray">
+    <Grid Name="gridKleuren" Background="LightGray">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.8*"/>
             <ColumnDefinition/>
@@ -26,11 +26,12 @@
                    HorizontalAlignment="Center" 
                    Grid.ColumnSpan="2"/>
         
-        <Image Source="/PXL.png" 
+        <Image x:Name="pxlLogo" Source="/PXL.png" 
                Grid.Column="3"
                HorizontalAlignment="Right"
                Margin="0,20,20,71" 
-               Grid.RowSpan="2"/>
+               Grid.RowSpan="2" MouseEnter="pxlLogo_MouseEnter" MouseLeave="pxlLogo_MouseLeave"
+               />
         
         
     </Grid>

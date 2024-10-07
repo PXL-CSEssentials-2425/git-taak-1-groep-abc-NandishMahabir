@@ -24,5 +24,15 @@ namespace GitTaak1
         {
             InitializeComponent();
         }
+
+        private void pxlLogo_MouseEnter(object sender, MouseEventArgs e)
+        {
+            gridKleuren.Background = Brushes.Black;
+        }
+
+        private void pxlLogo_MouseLeave(object sender, MouseEventArgs e)
+        {
+            gridKleuren.Background = Brushes.LightGray;
+        }
     }
 }
