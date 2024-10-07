@@ -14,11 +14,11 @@
             <ColumnDefinition Width="1.8*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*"/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition Height="0.5*"/>
-            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.3*"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Kleurenpsychologie" 
                    FontSize="25" 
@@ -30,9 +30,33 @@
                Grid.Column="3"
                HorizontalAlignment="Right"
                Margin="0,20,20,71" 
-               Grid.RowSpan="2" MouseEnter="pxlLogo_MouseEnter" MouseLeave="pxlLogo_MouseLeave"
-               />
+               Grid.RowSpan="2"/>
+        <Image Name="red"
+               Source="/Rood.png" 
+               Grid.Row="1"
+               Grid.Column="1"
+               Margin="5" 
+               MouseEnter="red_MouseEnter" MouseLeave="img_MouseLeave"/>
         
+        <Image Name="yellow"
+               Source="/Geel.png" 
+               Grid.Row="1"
+               Grid.Column="2"
+               Margin="5" 
+               MouseEnter="yellow_MouseEnter" MouseLeave="img_MouseLeave"/>
         
+        <Image Name="green"
+               Source="/Groen.png" 
+               Grid.Row="2"
+               Grid.Column="1"
+               Margin="5" 
+               MouseEnter="green_MouseEnter" MouseLeave="img_MouseLeave"/>
+        
+        <Image Name="blue"
+               Source="/Blauw.png" 
+               Grid.Row="2"
+               Grid.Column="2"
+               Margin="5" 
+               MouseEnter="blue_MouseEnter" MouseLeave="img_MouseLeave"/>
     </Grid>
 </Window>
