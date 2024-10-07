@@ -14,7 +14,7 @@
             <ColumnDefinition Width="1.8*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="0.6*"/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition Height="0.3*"/>
@@ -68,8 +68,23 @@
         <TextBox Name="colorText"
                  Grid.Column="1"
                  Grid.Row="3"
+                 Grid.ColumnSpan="2"
                  Margin="5, 3"
                  FontSize="20"
                  />
+
+        <TextBlock Text="Informatie:"
+           FontSize="20"
+           Grid.Row="4"
+           HorizontalAlignment="Right"
+           VerticalAlignment="Center"/>
+
+        <TextBox Name="informationText"
+         Grid.Column="1"
+         Grid.Row="4"
+         Grid.ColumnSpan="2"
+         Margin="5, 3"
+         FontSize="20"
+         />
     </Grid>
 </Window>
